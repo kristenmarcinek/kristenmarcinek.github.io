@@ -1,369 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kristen's space.</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
-    </style>
-    <!-- <script src="https://gusbus.space/smallweb-subway.js/creativesclub.js"></script> -->
-    <script src="main.js"></script>
+    <title>Kristen's Space.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Jacquard+12&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div id="container">
-        <!-- <div id="topBar">
-            <marquee direction="left" scrollamount="15">COME TOO <a
-                    href="https://app.acuityscheduling.com/schedule/fb85a23f/?appointmentTypeIds[]=67561130"
-                    target="_blank">WII NIGHT</a>!</marquee>
-        </div> -->
-        <!-- <div id="headerArea">
+<body data-theme="dark">
 
-            <nav id="navbar" style="margin-bottom: 10px;">
-                <ul id="navList">
-                    <li><a href="#">home</a></li>
-                    <li><a href="/selected-works.html">selected works</a></li>
-                    <li><a href="/digital-games.html">video games & virtual worlds</a></li>
-                    <li><a href="/computational-art.html">computational art</a></li>
-                    <li><a href="/exhibits.html">museum exhibit design</a></li>
-                    <li><a href="/teaching.html">pedagogical conceptualizations</a></li>
-                    <li><a href="/toys.html">tabletop games & toys</a></li>
-                    <li class="dropdown">
-                        <a href="#">publications</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="https://www.wilsoncenter.org/publication/empowering-participation-science-citizen-science-landscape"
-                                    target="_blank">empowering participation in science</a></li>
-                            <li><a href="https://plasticpipeline.wilsoncenter.org/plastic-pipeline-impact"
-                                    target="_blank">the plastic pipeline impact research</a></li>
-                            <li><a href="https://www.wilsoncenter.org/blog-post/games-round-international-trade"
-                                    target="_blank">games round up: international trade</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/kristen-marcinek" target="_blank">linkedin</a></li>
-                    <li><a href="https://lichenlabs.itch.io/" target="_blank">itch.io</a></li>
-                    <li><a href="https://github.com/kristenmarcinek" target="_blank">github</a></li>
-                    <li><a href="/blog.html">blog</a></li>
-                    <li><a href="/cv.html">cv</a></li>
-                    <li><a href="/contact.html">contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kristen's Space.</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
                 </ul>
-                <button class="hamburger" onclick="toggleMenu()">🍔</button>
-            </nav>
-        </div> -->
-
-        <div id="flex">
-            <aside id="leftSidebar" style="margin-right: 10px;">
-                <h1>kristen marcinek</h1>
-                <p>game developer | creative technologist | artist</p>
-                <a id="navLink" href="#/">work</a></li>
-                <a id="navLink" href="/about.html">about</a>
-                <a id="navLink" href="/teaching.html">teaching</a>
-                <a id="navLink" href="/writing.html">writing</a>
-
-                <!-- <h2>blog</h2>
-                <div class="box">
-                    <p><time>2024-08-05</time> <a href="/content/blog/potpourri-3.html">potpourri no.3</a></p>
-                    <p><time>2024-07-25</time> <a href="/content/blog/potpourri-2.html">potpourri no.2</a></p>
-                    <p><time>2024-07-12</time> <a href="/content/blog/potpourri-1.html">potpourri no.1</a></p>
-                    <p><time>2024-07-10</time> <a href="/content/blog/dialectics.html">dialectics</a></p>
-                    <p><time>2024-07-09</time> <a href="/content/blog/recent-press.html">recent press (+ a
-                            fundraiser!)</a></p>
-                </div> -->
-                <br>
-                <!-- <a href="https://marcinek.tech" target="_blank">
-                    <img src="/images/marcinek88x31.png" border="0" alt="marcinek.tech" width="88" height="31"></a> -->
-                <h2>credits</h2>
-                <ul>
-                    <li>font is <a href="https://www.oliviaking.com/inclusive-sans" target="_blank">inclusive sans by
-                            olivia king</a></li>
-                    <li>template created using <a href="https://goblin-heart.net/sadgrl/projects/layout-builder/"
-                            target="_blank">sadgrl's layout builder</a></li>
-                    <li>color palette modified from <a href="https://everblush.github.io/" target="_blank">everblush</a>
-                    </li>
-                    <!-- <li>comments powered by <a href="https://giscus.app/" target="_blank">giscus</a></li>
-                    <li>blog written in <a href="https://blog.miso.town/" target="_blank">html blog</a> format</li> -->
-                    <li>cards powered by <a href="https://getbootstrap.com/" target="_blank">bootstrap</a></li>
-                    <li>hosted on <a href="https://pages.github.com/" target="_blank">github pages</a></li>
-                </ul>
-
-                <!-- <img src="/images/a12.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/doom-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/shadow-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/pacman-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/glados-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/parappa-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/yellow-pikmin-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/mc-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/godzilla-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/geek-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/pc-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/source-code-blinkie.gif" alt="" style="display: block; margin: auto;">
-                <img src="/images/cats-blinkie.gif" alt="" style="display: block; margin: auto;"> -->
-            </aside>
-            <main>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/trashcan-john.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">fleshwalk: an experience (current)</h5>
-                                <p class="card-text"> </p>
-                                <a href="https://fleshwalk.lichenlabs.xyz/"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="https://fleshwalk.lichenlabs.xyz/"
-                                    class="btn btn-outline-secondary text-light">play</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/witch-frog-render-1440.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">mystic marsh pets (current)</h5>
-                                <p class="card-text"> </p>
-                                <a href="/content/games/trashcan-john.html"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <video src="/content/artworks/souls_in_symbiosis.mp4" autoplay loop
-                                class="card-img-top"></video>
-                            <div class="card-body">
-                                <h5 class="card-title">souls in symbiosis (2024)</h5>
-                                <p class="card-text">an art piece created in p5.js that
-                                    uses a brownian tree algorithm to simulate
-                                    lichen growth. <i>souls in symbiosis</i> (physical) was on view in the steam engine
-                                    exhibition at rhizome dc in december 2024. </p>
-                                <a href="/content/artworks/souls-in-symbiosis/index.html"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/deepfake-files.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">the deepfake files (2024)</h5>
-                                <p class="card-text"><i>the deepfake files</i> is an interactive that aims to dispel common misconceptions and educate
-                                    staffers on the strengths and weaknesses of various
-                                    deepfake mitigation strategies to inform generative ai policy. contributions during my internship at the wilson center include gameplay design and preliminary research.</p>
-                                <a href="https://www.fablevisionstudios.com/portfolio/interactive-the-deepfake-files"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="https://www.wilsoncenter.org/deepfake-files-about"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="https://www.wilsoncenter.org/game/deepfakefiles"
-                                    class="btn btn-outline-secondary text-light">play</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/trashcan-john.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">feed me trash, man! (2024)</h5>
-                                <p class="card-text"> </p>
-                                <a href="/content/games/trashcan-john.html"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/meditate-mosaics.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">meditative mosaics (2023)</h5>
-                                <p class="card-text"> </p>
-                                <a href="/content/games/trashcan-john.html"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/climate-action-heroes.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">climate action heroes monthly missions (2023)</h5>
-                                <p class="card-text">monthly missions created for the at-home portion of the climate
-                                    action heroes exhibit. written during my internship at the national children's
-                                    museum.</p>
-                                <a href="/content/games/trashcan-john.html"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/psyche_quest.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">psyche quest (2023)</h5>
-                                <p class="card-text"><i>psyche quest</i> is a 2d platformer that takes players on an
-                                    emotional
-                                    journey
-                                    through the mind of someone with borderline personality disorder (bpd).</p>
-                                <a href="/content/games/psyche-quest.html"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="https://marcinexus.itch.io/psyche-quest"
-                                    class="btn btn-outline-secondary text-light">play</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/dvd-sc.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">dvd shot (2022)</h5>
-                                <p class="card-text"> </p>
-                                <a href="https://openprocessing.org/sketch/1670775"
-                                    class="btn btn-outline-secondary text-light">explore</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/shmup-sc.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">space shmup (2022)</h5>
-                                <p class="card-text"> </p>
-                                <a href="#" class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="/content/games/space-shmup/index.html"
-                                    class="btn btn-outline-secondary text-light">play</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/shmup-sc.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">client & community work</h5>
-                                <p class="card-text"> </p>
-                                <a href="#" class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="/content/games/space-shmup/index.html"
-                                    class="btn btn-outline-secondary text-light">play</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 text-center bg-transparent text-light">
-                            <img src="/images/all-renders.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">classwork</h5>
-                                <p class="card-text"> </p>
-                                <a href="#" class="btn btn-outline-secondary text-light">explore</a>
-                                <a href="/content/games/space-shmup/index.html"
-                                    class="btn btn-outline-secondary text-light">play</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <h1>welcome to the space of kristen marcinek.</h1>
-                <h3>i make things. ↯</h3>
-                <div class="square">
-                    <img src="/images/me.JPG" alt="photo of me playing with electronics" width="45%" height="auto"
-                        style="float: left; margin-right: 10px; margin-bottom: 5px;">
-                    <h3><a href="https://en.wikipedia.org/wiki/Net.art" target="_blank">net.art</a>ist statement</h3>
-                    <p>kristen (she/they) doesn't see the opposition between whimsy and meaning, between serious and
-                        play.
-                        she could go on a spiel about how other adults lose their sense of wonder, and she's really a
-                        kid at
-                        heart, but she doesn't actually think that's true. this wonder doesn't seem lost, she believes
-                        moreso there just aren't many outlets for adults to feel empowered to play.</p>
-                    <p>that's where her work comes in! from video games to immersive media to museum exhibits to toys,
-                        kristen creates for a wide audience to feel this empowerment to play.</p>
-                    <p>kristen works primarily in a domain she dubs "games and interactive media for social impact."
-                        this
-                        line of work has many names & offshoots under its umbrella: serious games, meaningful games,
-                        games
-                        for change, educational games, learning through play... no matter what one may call this domain,
-                        it
-                        is kristen's specialty. </p>
-                    <p>in particular, she focuses on how to properly portray social justice topics through game
-                        mechanics
-                        and narrative. she is passionate about providing non-traditional educational experiences and
-                        accurately representing intersectional and marginalized lenses that are grounded in tangible
-                        realities. kristen wants to ensure her games are created with ethics and empathy at the
-                        forefront of
-                        their design.</p>
-                    <p>kristen generally doesn't see entertainment and education in a hierarchy. her designs do not have
-                        to
-                        prioritize one over the other; she believes that they can work synergistically. she does this
-                        through making narrative and game mechanics consistent. she wants the story to resonate with the
-                        player through mechanics just as much as it does through the dialogue. <b>kristen specializes in
-                            ludonarrative harmony, narrative mechanic design, worldbuilding, and diegesis.</b></p>
-                    <p>kristen is currently a student at american university working towards her mfa in games and
-                        interactive media with a focus on meaningful games and immersive experiences. she currently
-                        interns
-                        with the wilson center in washington, dc in their serious games initiative. prior to the wilson
-                        center, she interned with the national children’s museum as an exhibits intern. kristen received
-                        her
-                        ba in information technology and informatics from rutgers university – new brunswick, where she
-                        also
-                        minored in social justice. during her time at rutgers, she was the president of reproductive
-                        health
-                        universal taskforce, an organization partnered with the friends of unfpa; the vice president and
-                        a
-                        founding member of rutgers women’s gaming league; and interned with the new jersey division on
-                        women
-                        where she performed analysis on legislation surrounding batterer intervention programs and
-                        criminal
-                        justice reform for incarcerated women in new jersey.</p>
-                    <p>kristen's technical skillset outside of narrative design includes unity engine & c# scripting;
-                        p5.js;
-                        javascript & other webdev technologies like html, css, bootstrap, and php; wysiwyg game engines
-                        like construct 3, stencyl, & twine;
-                        python, pygame, & ren'py; and git for version control. she also dabbles in <a
-                            href="/2d-illustration.html">2d illustration</a>, 3d
-                        modeling, ui/ux wireframing, and authoring dialogue.</p>
-                    <p>kristen practices collaboration and co-design, strives to approach her work through a
-                        human-centered
-                        lens, and is a quick learner who wants to solve every problem. kristen knows, though, that not
-                        everyone can do everything - what truly makes one wise is admitting that even the most
-                        knowledgeable
-                        can still learn from others. she sees the world in a dialectic - everyone is doing the best they
-                        can
-                        in the moment yet can still seek to improve.</p>
-                    <p>during her free time, kristen likes to spend time with her cat, go to museums, and play video
-                        games. over on her <a href="/blog.html" target="_blank">blog</a>, you can see her esoteric &
-                        eccentric thoughts on games, technology, social
-                        informatics, visual art, philosophy, and even outer space sometimes.
-                    </p>
-                </div> -->
-
-                <!-- <div style="text-align: center;">
-                    [&nbsp;&nbsp;&nbsp;&nbsp;<a
-                        href="https://www.rainbowcemetery.com/devring">GAMEDEV&nbsp;&nbsp;&nbsp;WEBRING</a>&nbsp;&nbsp;&nbsp;&nbsp;]<br>[<a
-                        href="https://www.rainbowcemetery.com/devring/prev.php?id=0">&lt;PREV</a> <a
-                        href="https://www.rainbowcemetery.com/devring/rand.php?id=0">RAND</a> <a
-                        href="https://www.rainbowcemetery.com/devring/list.php?id=0">LIST</a> <a
-                        href="https://www.rainbowcemetery.com/devring/next.php?id=0">NEXT&gt;</a>]
-                </div>
-                <smallweb-subway-creativesclub></smallweb-subway-creativesclub> -->
+            </div>
+            <button id="themeToggle" class="btn btn-outline-light btn-sm">🌙</button>
         </div>
-        </main>
+    </nav>
 
-    </div>
-    <!-- <footer id="footer" style="margin-top: 10px;">
-        
-        <p><i>while i am proud of, grateful for, and identify with my employment history, all thoughts and opinions
-                expressed are my own. they are <b>not</b> representative of the wilson center, national children's
-                museum, american university, or rutgers university.</i></p>
-        <p xmlns:cc="http://creativecommons.org/ns#"><a rel="cc:attributionURL" href="https://marcinek.tech">This
-                work</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName"
-                href="https://marcinek.tech">Kristen Marcinek</a> is licensed under <a
-                href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"
-                rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img
-                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
-                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
-                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                    src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
-    </footer> -->
-    </div>
+    <header class="hero">
+        <div class="container text-center">
+            <h1 style="color: #8ccf7e;">Kristen Marcinek</h1>
+            <p>Game Designer • Creative Technologist • Artist • Researcher</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/fleshwalk-cover.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Fleshwalk: An Experience (Current)</h5>
+                        <p>First-person Shooter</p>
+                        <a href="fleshwalk.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/witch-frog-print-mockup.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Mystic Marsh Pets (Current)</h5>
+                        <p>Toy</p>
+                        <a href="mystic-marsh-pets.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/souls-physical.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Souls in Symbiosis (2024)</h5>
+                        <p>Computational Art & Installation</p>
+                        <a href="souls-symbiosis.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/deepfake-files.png" alt="Project">
+                    <div class="project-info">
+                        <h5>The Deepfake Files (2024)</h5>
+                        <p>Serious Game</p>
+                        <a href="deepfake-files.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/trashcan-john.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Feed Me Trash, Man! (2024)</h5>
+                        <p>Game Installation</p>
+                        <a href="trashcan-john.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/mosaics-cover.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Meditative Mosaics (2023)</h5>
+                        <p>Museum Exhibit</p>
+                        <a href="meditative-mosaics.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/climate-action-heroes.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Climate Action Heroes Monthly Missions (2023)</h5>
+                        <p>Virtual Exhibit</p>
+                        <a href="monthly-missions.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/psyche_quest.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Psyche Quest (2023)</h5>
+                        <p>Platformer</p>
+                        <a href="psyche-quest.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/dvd-sc.png" alt="Project">
+                    <div class="project-info">
+                        <h5>DVD Shot (2022)</h5>
+                        <p>Interactive Media</p>
+                        <a href="https://openprocessing.org/sketch/1670775" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/shmup-sc.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Space SHMUP (2022)</h5>
+                        <p>Arcade Game</p>
+                        <a href="https://kristenmarcinek.github.io/content/games/space-shmup/index.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img src="media/shmup-sc.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Client Work</h5>
+                        <p>Graphic & Web Design</p>
+                        <a href="client-work.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

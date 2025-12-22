@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kristen's space.</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
-    </style>
-    <script src="main.js"></script>
+    <title>Kristen's Writing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Jacquard+12&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div id="container">
-        <div id="flex">
-            <aside id="leftSidebar" style="margin-right: 10px;">
-                <h1>kristen marcinek</h1>
-                <p>game developer | creative technologist | artist</p>
-                <a id="navLink" href="/index.html">work</a></li>
-                <a id="navLink" href="/about.html">about</a>
-                <a id="navLink" href="/teaching.html">teaching</a>
-                <a id="navLink" href="#">writing</a>
-            </aside>
-            <main>
-                <h1>writing</h1>
-                <p>adesanmi, b. et al. (2024, october). <a
-                        href="https://www.wilsoncenter.org/article/innovating-how-we-innovate-triple-helix-university-industry-government-relations.">innovating
-                        how we innovate: the triple helix of university-industry-government relations</a> the woodrow
-                    wilson international center
-                    for scholars.</p>
-                <p>marcinek, k. e. et al. (2024, august). <a
-                        href="https://www.wilsoncenter.org/blog-post/plastic-pipeline-wins-big-serious-game-festivals">the
-                        plastic pipeline wins big at serious game festivals</a>. the woodrow wilson international center
-                    for scholars.</p>
-                <p>marcinek, k. e., & newbury, e. m. h. (2024, july). <a
-                        href="https://www.wilsoncenter.org/blog-post/games-round-international-trade">games round up:
-                        international trade.</a> the woodrow wilson international center for scholars.</p>
-                <p>chen, j., & marcinek, k. e. (2024, june). <a
-                        href="https://www.wilsoncenter.org/publication/empowering-participation-science-citizen-science-landscape">empowering
-                        participation in science: a citizen science landscape.</a> the woodrow wilson international
-                    center for scholars.</p>
-            </main>
+<body data-theme="dark">
 
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Kristen's Space.</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Writing</a></li>
+                </ul>
+            </div>
+            <button id="themeToggle" class="btn btn-outline-light btn-sm">🌙</button>
         </div>
-    </div>
+    </nav>
+
+    <main class="container my-5 pt-5">
+        <h1>Writing</h1>
+
+        <div class="writing-list mt-4">
+            <article class="writing-item">
+                <h3>Game Design as Expression of Self: A Typology</h3>
+                <p>December 2024</p>
+                <a href="https://bsky.app/profile/lichenlabs.bsky.social/post/3lcsjuyfnh224">Read more →</a>
+            </article>
+            <article class="writing-item">
+                <h3>Innovating How We Innovate: The Triple Helix of University-Industry-Government Relations</h3>
+                <p>October 2024</p>
+                <a href="https://www.wilsoncenter.org/article/innovating-how-we-innovate-triple-helix-university-industry-government-relations">Read more →</a>
+            </article>
+            <article class="writing-item">
+                <h3>The Plastic Pipeline Wins Big at Serious Game Festivals</h3>
+                <p>August 2024</p>
+                <a href="https://www.wilsoncenter.org/blog-post/plastic-pipeline-wins-big-serious-game-festivals">Read more →</a>
+            </article>
+
+            <article class="writing-item">
+                <h3>Games Round Up: International Trade</h3>
+                <p>July 2024</p>
+                <a href="https://www.wilsoncenter.org/blog-post/games-round-international-trade">Read more →</a>
+            </article>
+            <article class="writing-item">
+                <h3>Empowering Participation in Science: A Citizen Science Landscape</h3>
+                <p>June 2024</p>
+                <a href="https://www.wilsoncenter.org/publication/empowering-participation-science-citizen-science-landscape">Read more →</a>
+            </article>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
