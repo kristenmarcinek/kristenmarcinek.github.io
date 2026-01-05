@@ -1,17 +1,13 @@
-// Main.js
-
-// Select the theme toggle button
+// theme toggle
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 
-// Check localStorage for saved theme
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     body.setAttribute('data-theme', savedTheme);
     updateButtonIcon(savedTheme);
 }
 
-// Function to toggle theme
 function toggleTheme() {
     const currentTheme = body.getAttribute('data-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -20,7 +16,7 @@ function toggleTheme() {
     updateButtonIcon(newTheme);
 }
 
-// Update the button icon based on theme
+// change icon
 function updateButtonIcon(theme) {
     if (theme === 'dark') {
         themeToggle.textContent = '🌙';
@@ -29,17 +25,13 @@ function updateButtonIcon(theme) {
     }
 }
 
-// Event listener
 themeToggle.addEventListener('click', toggleTheme);
 
-// ---------------------------
-// Optional: GLightbox initialization
-// ---------------------------
-const lightbox = GLightbox({
-    selector: '.glightbox'
-});
+// photos
+if (typeof GLightbox !== "undefined") {
+  new GLightbox({ selector: ".glightbox" });
+}
 
-// Navbar scroll effect
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 30) {
@@ -48,3 +40,12 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('scrolled');
     }
 });
+
+// hamburger menu
+const hamburger = document.getElementById("hamburger");
+const navbarMenu = document.getElementById("navbarMenu");
+
+hamburger.addEventListener("click", () => {
+    navbarMenu.classList.toggle("active");
+});
+
