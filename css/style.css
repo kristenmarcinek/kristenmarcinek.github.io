@@ -172,6 +172,30 @@ body[data-theme="light"] .navbar .btn-outline-light:hover {
     z-index: 0;
 }
 
+/* filter by tag */
+.project-filter {
+    display: none;
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer {
+    padding-bottom: 15px;
+    padding-top: 0%;
+    align-items: center;
+    text-align: center;
+}
+
+#myBtnContainer .btn {
+    color: #8ccf7e !important;
+}
+
+#myBtnContainer .btn:hover {
+    color: white !important;
+}
+
 /* project cards */
 .project-card {
     border-radius: 10px;
