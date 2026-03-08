@@ -456,6 +456,31 @@ body[data-theme="light"] .teaching-item p {
     color: #333;
 }
 
+.portfolio-gallery {
+    max-width: 1200px;
+}
+
+.grid-item {
+    width: 33.333%;
+    padding: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-gallery a {
+    display: block;
+}
+
+.portfolio-gallery img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 /* make responsive */
 @media (max-width: 1024px) {
     .hamburger {
@@ -519,5 +544,17 @@ body[data-theme="light"] .teaching-item p {
         left: 10px;
         transform: none;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-item {
+        width: 100%;
     }
 }
