@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 
@@ -118,25 +119,27 @@
 
         <button onclick="topFunction()" id="toTopBtn" title="Go to top">↑</button>
 
-        <!-- <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script> -->
-        <script>
-            const lightbox = GLightbox({
-                selector: ".glightbox"
-            });
-        </script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
 
-                const lightbox = GLightbox({
+                GLightbox({
                     selector: ".glightbox"
                 });
 
                 const grid = document.querySelector('.portfolio-gallery');
+                if (!grid) return;
 
-                new Masonry(grid, {
+                const masonry = new Masonry(grid, {
                     itemSelector: '.grid-item',
                     percentPosition: true
+                });
+
+                imagesLoaded(grid).on('progress', function () {
+                    masonry.layout();
+                });
+
+                window.addEventListener('resize', function () {
+                    masonry.layout();
                 });
 
             });
