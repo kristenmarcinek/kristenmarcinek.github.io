@@ -60,7 +60,42 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+  requestAnimationFrame(relayoutProjectsGallery);
 }
+
+function relayoutProjectsGallery() {
+  const gallery = document.querySelector('.projects-gallery');
+  if (!gallery) return;
+
+  const computed = window.getComputedStyle(gallery);
+  const rowHeight = parseFloat(computed.getPropertyValue('grid-auto-rows'));
+  const rowGap = parseFloat(computed.getPropertyValue('row-gap'));
+  if (!rowHeight) return;
+
+  const items = gallery.querySelectorAll('.project-filter');
+  items.forEach(function (item) {
+    item.style.gridRowEnd = '';
+  });
+
+  const shown = gallery.querySelectorAll('.project-filter.show');
+  shown.forEach(function (item) {
+    const card = item.querySelector('.project-card');
+    if (!card) return;
+    const cardHeight = card.getBoundingClientRect().height;
+    const span = Math.ceil((cardHeight + rowGap) / (rowHeight + rowGap));
+    item.style.gridRowEnd = 'span ' + span;
+  });
+}
+
+window.addEventListener('resize', relayoutProjectsGallery);
+window.addEventListener('load', relayoutProjectsGallery);
+
+const galleryImages = document.querySelectorAll('.projects-gallery .project-card img');
+galleryImages.forEach(function (img) {
+  if (!img.complete) {
+    img.addEventListener('load', relayoutProjectsGallery);
+  }
+});
 
 // show filtered elements
 function w3AddClass(element, name) {

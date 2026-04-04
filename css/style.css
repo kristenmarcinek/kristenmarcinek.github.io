@@ -251,6 +251,39 @@ a:hover .toctext {
     display: block;
 }
 
+/* masonry gallery on homepage */
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 8px;
+    align-items: start;
+}
+
+.projects-gallery .project-filter {
+    width: auto !important;
+    max-width: none !important;
+    flex: initial !important;
+    margin: 0;
+}
+
+.projects-gallery .project-filter.show {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .projects-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .projects-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
 #myBtnContainer {
     padding-bottom: 15px;
     padding-top: 0%;
