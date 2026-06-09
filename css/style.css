@@ -489,6 +489,20 @@ body[data-theme="light"] .teaching-item p {
     color: #333;
 }
 
+.teaching-item a {
+    font-weight: 500;
+    color: #8ccf7e;
+}
+
+body[data-theme="dark"] .teaching-item a:hover {
+    color: #76b66a;
+}
+
+body[data-theme="light"] .teaching-item a:hover {
+    color: #76b66a;
+}
+
+/* gallery style */
 .portfolio-gallery {
     max-width: 1200px;
 }
