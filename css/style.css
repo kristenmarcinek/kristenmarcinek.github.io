@@ -54,6 +54,14 @@ body[data-theme="light"] {
     font-size: 30px;
 }
 
+.box {
+    background-color: #141b1e;
+    border: 1px solid #8ccf7e;
+    border-radius: 15px;
+    padding-top: 15px;
+    /* padding-bottom: 10px; */
+}
+
 /* dark theme nav */
 body[data-theme="dark"] .navbar {
     background: rgba(28, 39, 36, 0.75);
