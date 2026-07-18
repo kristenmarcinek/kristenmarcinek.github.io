@@ -64,26 +64,28 @@ function filterSelection(c) {
 }
 
 function relayoutProjectsGallery() {
-  const gallery = document.querySelector('.projects-gallery');
-  if (!gallery) return;
+  const galleries = document.querySelectorAll('.projects-gallery');
+  if (!galleries.length) return;
 
-  const computed = window.getComputedStyle(gallery);
-  const rowHeight = parseFloat(computed.getPropertyValue('grid-auto-rows'));
-  const rowGap = parseFloat(computed.getPropertyValue('row-gap'));
-  if (!rowHeight) return;
+  galleries.forEach(function (gallery) {
+    const computed = window.getComputedStyle(gallery);
+    const rowHeight = parseFloat(computed.getPropertyValue('grid-auto-rows'));
+    const rowGap = parseFloat(computed.getPropertyValue('row-gap'));
+    if (!rowHeight) return;
 
-  const items = gallery.querySelectorAll('.project-filter');
-  items.forEach(function (item) {
-    item.style.gridRowEnd = '';
-  });
+    const items = gallery.querySelectorAll('.project-filter');
+    items.forEach(function (item) {
+      item.style.gridRowEnd = '';
+    });
 
-  const shown = gallery.querySelectorAll('.project-filter.show');
-  shown.forEach(function (item) {
-    const card = item.querySelector('.project-card');
-    if (!card) return;
-    const cardHeight = card.getBoundingClientRect().height;
-    const span = Math.ceil((cardHeight + rowGap) / (rowHeight + rowGap));
-    item.style.gridRowEnd = 'span ' + span;
+    const shown = gallery.querySelectorAll('.project-filter.show');
+    shown.forEach(function (item) {
+      const card = item.querySelector('.project-card');
+      if (!card) return;
+      const cardHeight = card.getBoundingClientRect().height;
+      const span = Math.ceil((cardHeight + rowGap) / (rowHeight + rowGap));
+      item.style.gridRowEnd = 'span ' + span;
+    });
   });
 }
 

@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Jacquard+12&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Young+Serif&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -28,8 +29,9 @@
                 <ul class="navbar-nav ms-auto" id="navList">
                     <li class="nav-item"><a class="nav-link" href="index.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="https://github.com/kristenmarcinek"
                             target="_blank">GitHub</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/kristen-marcinek/"
@@ -38,20 +40,20 @@
                             target="_blank">Studio</a></li> -->
                 </ul>
             </div>
-
-            <button id="themeToggle" class="btn btn-outline-light btn-sm">🌙</button>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container text-center">
+        <div class="container">
             <h1 style="color: #8ccf7e;">Kristen Marčinek</h1>
-            <p>Game Designer • Creative Technologist • Bio-Artist • Researcher</p>
+            <p>Technical Artist • Experience Designer • Researcher</p>
         </div>
     </header>
 
     <main class="container my-5">
-        <div id="myBtnContainer">
+        <h3>Artworks ↯</h3>
+        <hr>
+        <!-- <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Show all</button>
             <button class="btn" onclick="filterSelection('games')"> Games</button>
             <button class="btn" onclick="filterSelection('installation')"> Installations</button>
@@ -60,12 +62,12 @@
             <button class="btn" onclick="filterSelection('physical')"> Physical</button>
             <button class="btn" onclick="filterSelection('design')"> Design</button>
             <button class="btn" onclick="filterSelection('interactive')"> Interactive</button>
-        </div>
+        </div> -->
 
         <div class="projects-gallery">
             <div class="col-md-6 col-lg-4 project-filter games unity design interactive">
                 <div class="project-card">
-                    <img src="media/fleshwalk-cover.png" alt="Project">
+                    <img src="media/steam_screenshot16.png" alt="Project">
                     <div class="project-info">
                         <h5>Fleshwalk: An Experience (Current)</h5>
                         <p>First-person Shooter</p>
@@ -74,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 project-filter physical design">
+            <!-- <div class="col-md-6 col-lg-4 project-filter physical design">
                 <div class="project-card">
                     <img src="media/witch-frog-print-mockup.png" alt="Project">
                     <div class="project-info">
@@ -83,10 +85,10 @@
                         <a href="mystic-marsh-pets.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
-            <!-- <div class="col-md-6 col-lg-4 project-filter web games">
+            <div class="col-md-6 col-lg-4 project-filter web games">
                 <div class="project-card">
                     <img src="media/the-intruder.png" alt="Project">
                     <div class="project-info">
@@ -95,7 +97,7 @@
                         <a href="the-intruder.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="col-md-6 col-lg-4 project-filter web installation">
                 <div class="project-card">
@@ -108,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 project-filter games web interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter games web interactive">
                 <div class="project-card">
                     <img src="media/deepfake-files.png" alt="Project">
                     <div class="project-info">
@@ -117,9 +119,9 @@
                         <a href="deepfake-files.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter games installation interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter games installation interactive">
                 <div class="project-card">
                     <img src="media/trashcan-john.png" alt="Project">
                     <div class="project-info">
@@ -128,9 +130,9 @@
                         <a href="trashcan-john.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter web interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter web interactive">
                 <div class="project-card">
                     <img src="media/mushroom-simulator.png" alt="Project">
                     <div class="project-info">
@@ -139,9 +141,9 @@
                         <a href="mushroom-simulator.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter games unity interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter games unity interactive">
                 <div class="project-card">
                     <img src="media/psyche_quest.png" alt="Project">
                     <div class="project-info">
@@ -150,9 +152,9 @@
                         <a href="psyche-quest.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter installation physical design interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter installation physical design interactive">
                 <div class="project-card">
                     <img src="media/mosaics-cover.png" alt="Project">
                     <div class="project-info">
@@ -161,9 +163,9 @@
                         <a href="meditative-mosaics.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter installation">
+            <!-- <div class="col-md-6 col-lg-4 project-filter installation">
                 <div class="project-card">
                     <img src="media/climate-action-heroes.png" alt="Project">
                     <div class="project-info">
@@ -172,9 +174,9 @@
                         <a href="monthly-missions.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter installation web">
+            <!-- <div class="col-md-6 col-lg-4 project-filter installation web">
                 <div class="project-card">
                     <img src="media/ar-dream-machine.jpg" alt="Project">
                     <div class="project-info">
@@ -183,9 +185,9 @@
                         <a href="ar-dream-machine.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter web games interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter web games interactive">
                 <div class="project-card">
                     <img src="media/dvd-sc.png" alt="Project">
                     <div class="project-info">
@@ -194,9 +196,9 @@
                         <a href="https://openprocessing.org/sketch/1670775" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter games unity">
+            <!-- <div class="col-md-6 col-lg-4 project-filter games unity">
                 <div class="project-card">
                     <img src="media/shmup-sc.png" alt="Project">
                     <div class="project-info">
@@ -206,9 +208,9 @@
                             class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter games design physical">
+            <!-- <div class="col-md-6 col-lg-4 project-filter games design physical">
                 <div class="project-card">
                     <video width="100%" height="100%" autoplay muted playsinline>
                         <source src="content/irl/trash-thrash-video.mp4" type="video/mp4" alt="Project">
@@ -221,9 +223,9 @@
                             class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter web">
+            <!-- <div class="col-md-6 col-lg-4 project-filter web">
                 <div class="project-card">
                     <img src="media/hga1.png" alt="Project">
                     <div class="project-info">
@@ -232,9 +234,9 @@
                         <a href="web-design.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter design">
+            <!-- <div class="col-md-6 col-lg-4 project-filter design">
                 <div class="project-card">
                     <img src="media/fleshwalk_dvd_case_cover.png" alt="Project">
                     <div class="project-info">
@@ -243,9 +245,9 @@
                         <a href="graphic-design.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-6 col-lg-4 project-filter web interactive">
+            <!-- <div class="col-md-6 col-lg-4 project-filter web interactive">
                 <div class="project-card">
                     <img src="media/XenonLichen4.jpg" alt="Project">
                     <div class="project-info">
@@ -254,8 +256,90 @@
                         <a href="live-visuals.html" class="btn btn-sm btn-primary">Explore</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
+        </div>
+
+        <br>
+        <h3>Projects ↯</h3>
+        <hr>
+        <div class="projects-gallery">
+            <div class="col-md-6 col-lg-4 project-filter web">
+                <div class="project-card">
+                    <img src="media/hga3.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Highland Global Advisors</h5>
+                        <p>Web Design & Branding</p>
+                        <a href="web-design.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 project-filter games web interactive">
+                <div class="project-card">
+                    <img src="media/deepfake-files.png" alt="Project">
+                    <div class="project-info">
+                        <h5>The Deepfake Files (2024)</h5>
+                        <p>Serious Game</p>
+                        <a href="deepfake-files.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 project-filter installation physical design interactive">
+                <div class="project-card">
+                    <img src="media/mosaics-cover.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Meditative Mosaics (2023)</h5>
+                        <p>Museum Exhibit</p>
+                        <a href="meditative-mosaics.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <h3>Commissions ↯</h3>
+        <hr>
+        <div class="projects-gallery">
+            <div class="col-md-6 col-lg-4 project-filter">
+                <div class="project-card">
+                    <img src="media/judgement-day-graphic-filtered-square.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Judgement Day (2026)</h5>
+                        <p>Graphic Design</p>
+                        <a href="fleshwalk.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 project-filter">
+                <div class="project-card">
+                    <img src="media/turnpyke3.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Turnpyke (2025)</h5>
+                        <p>Graphic Design</p>
+                        <a href="graphic-design.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 project-filter">
+                <div class="project-card">
+                    <img src="media/wii-visualizer.png" alt="Project">
+                    <div class="project-info">
+                        <h5>Wii Party: A Nintendo Themed Drag Show (2025)</h5>
+                        <p>Live Visuals</p>
+                        <a href="live-visuals.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 project-filter">
+                <div class="project-card">
+                    <img src="media/XenonLichen4.jpg" alt="Project">
+                    <div class="project-info">
+                        <h5>Night of the Livecoding Dead (2024)</h5>
+                        <p>Live Visuals</p>
+                        <a href="live-visuals.html" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
