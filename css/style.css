@@ -147,7 +147,11 @@ body[data-theme="light"] .navbar .btn-outline-light:hover {
 @media (min-width: 1025px) {
     body {
         padding-top: 0;
-        padding-left: 312px;
+        padding-left: 272px;
+    }
+
+    .hero {
+        margin: 0;
     }
 
     .navbar {
@@ -247,7 +251,7 @@ body[data-theme="light"] .navbar .btn-outline-light:hover {
     padding: 100px 20px;
     /* text-align: center; */
     /* border-radius: 15px; */
-    margin: 0 20px;
+    margin: 0;
     overflow: hidden;
     color: #f1f1f1;
     border-bottom: 2px solid black;
