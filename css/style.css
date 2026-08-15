@@ -12,7 +12,7 @@ a {
 
 /* dark theme base */
 body[data-theme="dark"] {
-    background: linear-gradient(135deg, #0f1411 0%, #1a1b1a 45%, #243128 100%);
+    background: #131b1e;
     background-attachment: fixed;
     color: #f1f1f1;
 }
